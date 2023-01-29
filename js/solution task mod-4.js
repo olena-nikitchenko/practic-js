@@ -1672,6 +1672,14 @@
 // console.log(playerIsOnline);
 
 // метод fiтв пребирає елементи маисву і додає перший елемент який відповіда умові у новий масив, або повертає undefined масив якщо не один елемент не підійщов під умову.
-const numbers = [1, 4, 7, 6, 10];
-const numbersChange = numbers.find(number => number === 11);
-console.log(numbersChange);
+// const numbers = [1, 4, 7, 6, 10];
+// const numbersChange = numbers.find(number => number === 11);
+// console.log(numbersChange);
+// const numbers = [1, 4, 7, 6, 10];
+// const numbersChange = numbers.find(number => number === 11);
+// console.log(numbersChange);
+
+// метод sort!!! змінює оригинальний масив. При сортуванны приводе до строки а потім сортує по юнікоду за зростанням.
+const numbers = [1, 5, 10, 12];
+numbers.sort();
+console.log(numbers);
