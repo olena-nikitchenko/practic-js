@@ -1569,3 +1569,109 @@
 //     0
 // );
 // console.log(totalAveragePlaytimePerGame);
+// Кінець вирішення задач по автоперевірці
+
+// Вирішення задач з Репетою
+// метод forEach
+// const numbers = [1, 2, 3, 4, 5, 6];
+// numbers.forEach(
+//     function (number, index, array) {
+//         console.log('number', number);
+//         console.log(this);
+//         // array[index] = 20;
+//     },
+//     { a: 5, b: 6 }
+// );
+
+// console.log(numbers);
+
+// метод map - не змінює старий масив, а створює новий масив з такою же дожиною як і старий, тощо вертає колбек портається
+// на позицію віповідного елементу /
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const doubleТumbers = numbers.map(number => number * 2);
+
+// console.log(numbers);
+// console.log(doubleТumbers);
+// const players = [
+//     {
+//         id: 'player - 1',
+//         name: 'Mango',
+//         points: 52,
+//         online: false,
+//     },
+//     {
+//         id: 'player - 2',
+//         name: 'Poly',
+//         points: 62,
+//         online: true,
+//     },
+//     {
+//         id: 'player - 3',
+//         name: 'Kiwi',
+//         points: 72,
+//         online: true,
+//     },
+// ];
+
+// const playerNames = players.map(player => player.name);
+// const playerIds = players.map(player => player.id);
+// console.log(playerNames);
+// console.log(playerIds);
+// console.log(players);
+// // повернення масиву тільки з деякими властивостями об'єкта
+// const playerChange = players.map(({ name, online }) => ({ name, online }));
+// console.log(playerChange);
+
+// const upatedPlayers = players.map(player => ({ ...player, points: player.points * 1.1 }));
+// console.log(upatedPlayers);
+
+// const playerIdUptedToUpdate = 'player - 2';
+
+// const updetPlayers = players.map(player =>
+//     playerIdUptedToUpdate === player.id ? 'Мы нашли що треба оновлювати' : 'Ми знайшлі старі'
+// );
+// console.log(updetPlayers);
+// const playerName = 'Kiwi';
+
+// const updetPlayerName = players.map(player =>
+//     playerName === player.name
+//         ? { ...player, name: (player.name = 'Chery'), name: (player.name = ' ') }
+//         : player
+// );
+// console.log(updetPlayerName);
+
+// метод filter пребирає елементи маисву і додає їх у новий масив, якщо виконуються умова, або повертає новий пустий масив якщо не один елемент не підійщов під умову.
+// const numbers = [1, 4, 7, 6, 10];
+// const numbersChange = numbers.filter(number => number > 10);
+// console.log(numbersChange);
+
+// const players = [
+//     {
+//         id: 'player - 1',
+//         name: 'Mango',
+//         points: 52,
+//         online: false,
+//     },
+//     {
+//         id: 'player - 2',
+//         name: 'Poly',
+//         points: 62,
+//         online: true,
+//     },
+//     {
+//         id: 'player - 3',
+//         name: 'Kiwi',
+//         points: 72,
+//         online: true,
+//     },
+// ];
+
+// const playerOfline = players.filter(player => !player.online);
+// console.log(playerOfline);
+// const playerIsOnline = players.filter(player => player.online);
+// console.log(playerIsOnline);
+
+// метод fiтв пребирає елементи маисву і додає перший елемент який відповіда умові у новий масив, або повертає undefined масив якщо не один елемент не підійщов під умову.
+const numbers = [1, 4, 7, 6, 10];
+const numbersChange = numbers.find(number => number === 11);
+console.log(numbersChange);
