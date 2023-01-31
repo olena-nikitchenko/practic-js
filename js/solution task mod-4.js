@@ -1680,6 +1680,10 @@
 // console.log(numbersChange);
 
 // метод sort!!! змінює оригинальний масив. При сортуванны приводе до строки а потім сортує по юнікоду за зростанням.
-const numbers = [1, 5, 10, 12];
-numbers.sort();
-console.log(numbers);
+// const numbers = [1, 5, 10, 12];
+// const descNumbersSort = [...numbers].sort((a, b) => a - b);
+// const ascNumbersSort = [...numbers].sort((a, b) => b - a);
+
+// console.log(descNumbersSort);
+// console.log(descNumbersSort.reverse());
+// console.log(ascNumbersSort);
