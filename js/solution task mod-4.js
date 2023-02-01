@@ -1680,6 +1680,12 @@
 // console.log(numbersChange);
 
 // метод sort!!! змінює оригинальний масив. При сортуванны приводе до строки а потім сортує по юнікоду за зростанням.
-const numbers = [1, 5, 10, 12];
-numbers.sort();
-console.log(numbers);
+// const numbers = [1, 5, 10, 12];
+// numbers.sort();
+// console.log(numbers);
+
+// метод map практична задача з автопереревірки
+// const numbers = [1, 2, 3, 4];
+
+// const planetsInUpperCase = numbers.map(number => (number % 2 === 0 ? number * 2 : number));
+// console.log(planetsInUpperCase);
